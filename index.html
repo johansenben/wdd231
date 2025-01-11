@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | Ben Johansen | WDD 231</title>
+    <meta name="description" content="Ben Johansen's WDD 231 Home Page">
+    <meta name="author" content="Ben Johansen">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/course-work.js" defer></script>
+    <script src="scripts/certificate.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top-row">
+            <img class="profile-img" src="images/profile.jpg" alt="Profile Picture">
+            <h1>Ben Johansen</h1>
+            <div id="hamburger-btn" class="small-only"></div>
+        </div>
+        <nav id="header-nav" class="large-only">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Chamber</a></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Course Work</h2>
+            <ul id="course-work-list"></ul>
+        </section>
+        <section class="home-province">
+            <h2>Alberta, Canada</h2>
+            <img src="images/alberta.jpg" alt="Alberta Plains & Mountains">
+            <p>Plains & Mountains</p>
+        </section>
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <ul id="course-categories"></ul>
+            <ul id="course-list"></ul>
+            <p id="total-credits"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="current-year">2025</span> | Ben Johansen | Alberta, Canada</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

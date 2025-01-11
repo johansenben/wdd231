@@ -1,0 +1,163 @@
+:root {
+    font-family: "Roboto", serif;
+}
+body {
+    margin: 0;
+}
+.large-only {
+    display: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+header .top-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #79c;
+    padding: 1rem;
+    height: 6rem;
+    box-sizing: border-box;
+}
+.profile-img {
+    object-fit: contain;
+    width: 4rem;
+    height: auto;
+    margin-right: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #444;
+}
+#hamburger-btn {
+    width: 2rem;
+    height: 2rem;
+    margin-left: auto;
+
+    --color: #000;
+    background: linear-gradient(var(--color) 20%, #0000 20% 40%, var(--color) 40% 60%, #0000 60% 80%, var(--color) 80%);
+}
+#header-nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 1.5rem;
+    background-color: #9bd;
+    transform: translateX(100%);
+    transition: transform 0.25s ease;
+    border-radius: 0 0 0 1rem;
+    border: 1px solid #888;
+}
+#header-nav.open {
+    transform: translateX(0);
+}
+header nav ul {
+    padding: 0;
+}
+header nav li {
+    list-style: none;
+}
+header nav a {
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 7rem; /* margin affects position:fixed, but padding doesn't*/
+    margin-bottom: 1rem;
+    margin-inline: 1rem;
+}
+section {
+    box-shadow: 
+    0 0 4px #0008,
+    0 0 8px #0008,
+    0 0 12px #0008,
+    0 0 16px #0008;
+    border-radius: 1rem 1rem 0.5rem 0.5rem;
+    overflow: hidden;
+}
+h2 {
+    width: 100%;
+    text-align: center;
+    background-color: #6ac;
+    margin: 0;
+    padding-block: 0.5rem;
+}
+
+.home-province {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home-province img {
+    margin-top: 1rem;
+    width: min(400px, 70%);
+    border-radius: 0.5rem;
+}
+.home-province p {
+    margin-top: 0.5rem;
+}
+
+#course-categories {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+#course-categories li {
+    list-style: none;
+}
+#course-categories button  {
+    width: 8rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding-block: 0.5rem;
+    border-radius: 0.5rem;
+}
+#course-categories button:focus {
+    outline: 0.25rem solid #8ad;
+}
+#course-categories button.selected {
+    background-color: #248;
+}
+#course-list {
+    display: grid;
+    padding: 0;
+    margin: 1rem;
+    gap: 0.5rem;
+    box-sizing: border-box;
+}
+#course-list li {
+    width: 100%;
+    padding-block: 0.5rem;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    border-radius: 0.25rem;
+    background-color: #ddd;
+    color: #000;
+    border: 1px solid #aaa;
+}
+#course-list li.completed {
+    background-color: #573624;
+    color: #fff;
+}
+#total-credits {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #79c;
+    padding-block: 1rem;
+}
+footer p {
+    margin: 0;
+}
