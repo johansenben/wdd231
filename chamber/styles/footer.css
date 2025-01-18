@@ -1,0 +1,43 @@
+:root {
+    --footer-bg: var(--bg-color1);
+    --footer-txt-color: var(--txt-color1);
+
+    --media-logo-bg: var(--bg-color3);
+    --media-logo-invert: invert(1);
+}
+.dark-mode-on {
+    --footer-bg: var(--bg-color1-dark);
+    --footer-txt-color: var(--txt-color1-dark);
+
+    --media-logo-bg: var(--bg-color3-dark);
+    --media-logo-invert: invert(0);
+}
+
+footer {
+    background-color: var(--footer-bg);
+    padding: 1rem 0.5rem;
+    color: var(--footer-txt-color);
+}
+footer .heading {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.media-logos ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+.media-logo {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--media-logo-bg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-logo img {
+    filter: var(--media-logo-invert);
+}

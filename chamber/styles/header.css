@@ -1,0 +1,95 @@
+:root {
+    --header-bg: var(--bg-color1);
+    --header-name-color: var(--txt-color1);
+    --small-nav-bg: var(--bg-color2);
+    --hamburger-btn-color: var(--header-hamburger-btn-color);
+    --nav-a-color: var(--txt-color1);
+    --nav-a-hover-color: var(--txt-color2);
+}
+.dark-mode-on {
+    --header-bg: var(--bg-color1-dark);
+    --header-name-color: var(--txt-color1-dark);
+    --small-nav-bg: var(--bg-color2-dark);
+    --hamburger-btn-color: var(--header-hamburger-btn-color-dark);
+    --nav-a-color: var(--txt-color1-dark);
+    --nav-a-hover-color: var(--txt-color2-dark);
+}
+
+header {
+    display: grid;
+    background-color: var(--header-bg);
+    color: var(--header-color);
+    grid-template-columns: 1fr 1fr 0.25fr;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+
+.name {
+    margin-left: 1rem;
+    margin-block: 1rem;
+    color: var(--header-name-color);
+}
+
+
+nav {
+    display: none;
+}
+nav.open {
+    display: grid;
+    padding: 1rem;
+    background-color: var(--small-nav-bg);
+    width: 100%;
+    grid-column: 1 / 4;
+}
+nav li {
+    transition: transform 0.5s ease;
+    transform-origin: left center;
+}
+nav a {
+    color: var(--nav-a-color);
+}
+nav li:hover {
+    transform: scale(1.1);
+}
+nav li:hover a {
+    color: var(--nav-a-hover-color);
+}
+nav a.current-page {
+    text-decoration: underline;
+}
+
+#light-dark-mode-toggle {
+    border: 2px solid #000;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #000 50%, #fff 50%);
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+#light-dark-mode-toggle:focus {
+    outline: 2px solid #888;
+}
+
+
+#hamburger-btn {
+    width: 2rem;
+    height: 2rem;
+    margin-left: auto;
+    margin-right: 1rem;
+    border: none;
+
+    background: linear-gradient(#0000 5%, var(--hamburger-btn-color) 5% 22%, #0000 22% 40%, var(--hamburger-btn-color) 40% 60%, #0000 60% 78%, var(--hamburger-btn-color) 78% 95%, #0000 95%);
+
+    grid-column: 2 /3;
+    grid-row: 1 / 2;
+}
+
+
+main {
+    padding-top: 6rem;
+}

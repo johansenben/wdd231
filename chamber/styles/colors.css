@@ -1,0 +1,22 @@
+:root {
+    /* light mode */
+    --bg-color1: #ddd;
+    --bg-color2: #cbebf2;
+    --bg-color3: #888;
+    --bg-color4: #b8b7b7;
+
+    --txt-color1: #008;
+    --txt-color2: #44f;
+
+    --header-hamburger-btn-color: #333;
+    /* dark mode */
+    --bg-color1-dark: #228;
+    --bg-color2-dark: #17387a;
+    --bg-color3-dark: #aaa;
+    --bg-color4-dark: #505096;
+
+    --txt-color1-dark: #ddd;
+    --txt-color2-dark: #cce6eb;
+
+    --header-hamburger-btn-color-dark: #aaa;
+}

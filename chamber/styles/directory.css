@@ -1,0 +1,84 @@
+:root {
+    --title-color: var(--txt-color1);
+    --main-bg-color: var(--bg-color4);
+
+    --layout-btn-border-color: var(--bg-color3);
+    --layout-txt-color: var(--txt-color1);
+    --layout-bg-color: var(--bg-color2);
+
+    --card-border-color: var(--bg-color3);
+    --card-bg-color: var(--bg-color2);
+    --card-txt-color: var(--txt-color1);
+    --card-img-border-color: var(--bg-color3);
+}
+.dark-mode-on {
+    --title-color: var(--txt-color1-dark);
+    --main-bg-color: var(--bg-color4-dark);
+
+    --layout-btn-border-color: var(--bg-color3-dark);
+    --layout-txt-color: var(--txt-color2-dark);
+    --layout-bg-color: var(--bg-color2-dark);
+
+    --card-border-color: var(--bg-color3-dark);
+    --card-bg-color: var(--bg-color2-dark);
+    --card-txt-color: var(--txt-color1-dark);
+    --card-img-border-color: var(--bg-color3-dark);
+}
+main, .members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--main-bg-color);
+}
+h2 {
+    color: var(--title-color);
+}
+.member-cards-layout {
+    display: flex;
+    gap: 0.5rem;
+}
+.member-cards-layout button {
+    border: 1px solid var(--layout-btn-border-color);
+    color: var(--layout-txt-color);
+    background-color: var(--layout-bg-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+}
+#card-list {
+    display: grid;
+    gap: 1rem;
+    margin-block: 1rem;
+    width: 100%;
+    padding: 1rem;
+}
+.member-card {
+    border: 1px solid var(--card-border-color);
+    background-color: var(--card-bg-color);
+    color: var(--card-txt-color);
+    border-radius: 1rem;
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    gap: 1rem;
+}
+.member-card h3 {
+    text-align: center;
+    grid-column: 1 / 2;
+}
+.member-card img {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    border: 1px solid var(--card-img-border-color);
+}
+#card-list.grid-on {
+    grid-template-columns: repeat(auto-fill, 15rem);
+    align-items: center;
+    justify-content: center;
+}
+#card-list.grid-on .member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,11 @@
+@media only screen and (min-width: 600px) {
+    .member-card {
+        grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+    }
+    .member-card h3 {
+        grid-column: 1 / 5;
+    }
+    .member-card img {
+        grid-column: 5 / 6;
+    }
+}
