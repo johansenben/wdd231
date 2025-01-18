@@ -2,57 +2,57 @@
     "members": [
         {
             "name": "Member #1",
-            "address": "address #1",
-            "phone": "phone number #1",
-            "url": "url #1",
+            "address": "1234 1st",
+            "phone": "(000) 000-0001",
+            "url": "member1.com",
             "icon": "images/placeholder.svg",
             "membership_level": 1
         },
         {
             "name": "Member #2",
-            "address": "address #2",
-            "phone": "phone number #2",
-            "url": "url #2",
+            "address": "1234 2st",
+            "phone": "(000) 000-0002",
+            "url": "member2.com",
             "icon": "images/placeholder.svg",
             "membership_level": 3
         },
         {
             "name": "Member #3",
-            "address": "address #3",
-            "phone": "phone number #3",
-            "url": "url #3",
+            "address": "1234 3st",
+            "phone": "(000) 000-0003",
+            "url": "member3.com",
             "icon": "images/placeholder.svg",
             "membership_level": 2
         },
         {
             "name": "Member #4",
-            "address": "address #4",
-            "phone": "phone number #4",
-            "url": "url #4",
+            "address": "1234 4st",
+            "phone": "(000) 000-0004",
+            "url": "member4.com",
             "icon": "images/placeholder.svg",
             "membership_level": 2
         },
         {
             "name": "Member #5",
-            "address": "address #5",
-            "phone": "phone number #5",
-            "url": "url #5",
+            "address": "1234 5st",
+            "phone": "(000) 000-0005",
+            "url": "member5.com",
             "icon": "images/placeholder.svg",
             "membership_level": 1
         },
         {
             "name": "Member #6",
-            "address": "address #6",
-            "phone": "phone number #6",
-            "url": "url #6",
+            "address": "1234 6st",
+            "phone": "(000) 000-0006",
+            "url": "member6.com",
             "icon": "images/placeholder.svg",
             "membership_level": 3
         },
         {
             "name": "Member #7",
-            "address": "address #7",
-            "phone": "phone number #7",
-            "url": "url #7",
+            "address": "1234 7st",
+            "phone": "(000) 000-0007",
+            "url": "member7.com",
             "icon": "images/placeholder.svg",
             "membership_level": 1
         }
