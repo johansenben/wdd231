@@ -1,0 +1,17 @@
+@media only screen and (min-width: 800px) {
+    body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    main {
+        width: 800px;
+    }
+
+    .top-row {
+        grid-template-columns: 1.75fr 1.5fr 1fr;
+    }
+    .member-spotlights {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

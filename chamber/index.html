@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Directory | WDD 231 | Ben Johansen</title>
+    <title>Chamber Home | WDD 231 | Ben Johansen</title>
 
-    <meta name="description" content="Ben Johansen's Chamber Directory Page for WDD 231">
+    <meta name="description" content="Ben Johansen's Chamber Home Page for WDD 231">
     <meta name="author" content="Ben Johansen">
 
     <link rel="stylesheet" href="styles/normalize.css">
@@ -14,19 +14,20 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/header-large.css">
 
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/footer-large.css">
 
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory-large.css">
-
     <script src="scripts/header.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/member-spotlight.js" defer></script>
     <script src="scripts/footer.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
 
     <link rel="icon" href="./favicon.ico">
 
-    <meta property="og:title" content="Chamber Directory | Ben Johansen | WDD 231">
+    <meta property="og:title" content="Chamber Home | Ben Johansen | WDD 231">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://johansenben.github.io/wdd231/chamber/images/alberta.jpg">
     <meta property="og:url" content="https://johansenben.github.io/wdd231/chamber/directory.html">
@@ -41,21 +42,50 @@
         <button id="hamburger-btn" tabindex="1" aria-label="Menu Hamburger Button"></button>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="current-page">Directory</a></li>
+                <li><a href="index.html" class="current-page">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Directory</h2>
-        <div class="members">
-            <div class="member-cards-layout">
-                <button id="grid-mode">Grid</button>
-                <button id="list-mode">List</button>
+        <div class="hero-container">
+            <img src="images/lethbridge.jpg" alt="Lethbridge AB" class="hero">
+            <a href="/join.html" class="call-to-action">Join Us</a>
+        </div>
+        <h2>Home</h2>
+        <div class="top-row">
+            <div class="card events">
+                <h3>Events</h3>
+                <ul>
+                    <li>We are currently accepting new members!</li>
+                </ul>
             </div>
-            <div id="card-list"></div>
+            <div class="card current-weather">
+                <h3>Current Weather</h3>
+                <img src="images/weather-icon.svg" alt="Weather Icon">
+                <div class="weather-data">
+                    <p>Current Temperature: <span id="current-temp"></span>&deg;C</p>
+                    <p>Description: <span id="weather-desc"></span></p>
+                    <p>High: <span id="high-temp"></span>&deg;C</p>
+                    <p>Low: <span id="low-temp"></span>&deg;C</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Sunrise: <span id="sunrise"></span></p>
+                    <p>Sunset: <span id="sunset"></span></p>
+                </div>
+            </div>
+            <div class="card weather-forcast">
+                <h3>Weather Forcast</h3>
+                <div class="forcast-data">
+                    <p>Today: <span id="today-forcast"></span>&deg;C</p>
+                    <p>Tomorrow: <span id="tomorrow-forcast"></span>&deg;C</p>
+                    <p id="day3-forcast"></p>
+                </div>
+            </div>
+        </div>
+        <div class="member-spotlights">
+            <!-- dynamically generated 2-3 random with gold/silver tier -->
         </div>
     </main>
     <footer>

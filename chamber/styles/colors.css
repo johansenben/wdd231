@@ -7,13 +7,15 @@
 
     --txt-color1: #008;
     --txt-color2: #44f;
+    --txt-color3: #2a2a87;
 
     --header-hamburger-btn-color: #333;
     /* dark mode */
     --bg-color1-dark: #228;
     --bg-color2-dark: #17387a;
     --bg-color3-dark: #aaa;
-    --bg-color4-dark: #505096;
+    --bg-color4-dark: #3a3a78;
+    --bg-color5-dark: #4e5b8a;
 
     --txt-color1-dark: #ddd;
     --txt-color2-dark: #cce6eb;
