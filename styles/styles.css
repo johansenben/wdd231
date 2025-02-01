@@ -161,3 +161,18 @@ footer {
 footer p {
     margin: 0;
 }
+
+dialog {
+    width: 200px;
+    height: 300px;
+    background-color: green;
+    /* can't set display of dialog or it wont disapear */
+}
+::backdrop {
+    background-color: #8884;
+}
+dialog button {
+    background-color: blue;
+    padding: 1rem 0.5rem;
+}
+

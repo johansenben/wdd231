@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks For Joining - Chamber | WDD 231 | Ben Johansen</title>
+
+    <meta name="description" content="Ben Johansen's Chamber 'Thanks For Joining' Page for WDD 231">
+    <meta name="author" content="Ben Johansen">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/colors.css">
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/header-large.css">
+
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/footer-large.css">
+
+    <link rel="stylesheet" href="styles/thankyou.css">
+
+    <script src="scripts/header.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+
+    <link rel="icon" href="./favicon.ico">
+
+    <meta property="og:title" content="Chamber Thanks Page | Ben Johansen | WDD 231">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://johansenben.github.io/wdd231/chamber/images/alberta.jpg">
+    <meta property="og:url" content="https://johansenben.github.io/wdd231/chamber/directory.html">
+</head>
+<body>
+    <header>
+        <div class="name">
+            <h1>Lethbridge</h1>
+            <p>Chamber of Commerce</p>
+        </div>
+        <button id="light-dark-mode-toggle" tabindex="2" aria-label="Light And Dark Mode Toggle"></button>
+        <button id="hamburger-btn" tabindex="1" aria-label="Menu Hamburger Button"></button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="current-page">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Thanks For Joining</h2>
+        <div id="form-data"></div>
+    </main>
+    <footer>
+        <div>
+            <p class="heading">Lethbridge Chamber of Commerce</p>
+            <p>1234 5st</p>
+            <p>Lethbridge AB</p>
+            <p>email@gmail.com</p>
+            <p>(000) 000-0000</p>
+        </div>
+        <div class="media-logos">
+            <ul>
+                <li><a href="" class="media-logo"><img src="images/youtube.svg" alt="Youtube" loading="lazy"></a></li>
+                <li><a href="" class="media-logo"><img src="images/twitter.svg" alt="Twitter" loading="lazy"></a></li>
+                <li><a href="" class="media-logo"><img src="images/linkedin.svg" alt="LinkedIn" loading="lazy"></a></li>
+            </ul>
+        </div>
+        <div>
+            <p>WDD 231 Project</p>
+            <p>Ben Johansen</p>
+            <p>&copy;<span id="current-year"></span> Lethbridge Chamber of Commerce</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+</body>
+</html>

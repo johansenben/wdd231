@@ -78,6 +78,21 @@ const courses = [
     }
 ];
 
+
+
+const courseDetails = document.querySelector("#course-details");
+function displayCourseDetails(course) {console.log(course)
+    courseDetails.innerHTML = `
+        <button id="closeModal">close</button>
+        ${course}
+    `;
+    courseDetails.showModal();
+    document.querySelector("#closeModal").addEventListener("click", (e) => {
+        courseDetails.close();
+    });
+}
+
+
 const courseList = document.querySelector("#course-list");
 
 const courseCategories = document.querySelector("#course-categories");
@@ -85,7 +100,7 @@ const categories = ["All", "WDD", "CSE"];
 let selectedCategory = "All";
 
 const addToCourseList = (courseName, completed) => {
-    courseList.innerHTML += `<li class="${completed ? 'completed' : 'not-completed'}">${courseName}</li>`
+    courseList.innerHTML += `<li class="${completed ? 'completed' : 'not-completed'} ${courseName}">${courseName}</li>`;
 }
 const updateCourseList = (selectedCategory) => {
     courseList.innerHTML = '';
@@ -93,11 +108,27 @@ const updateCourseList = (selectedCategory) => {
         selectedCategory = "All";
     if (selectedCategory === "All") {
         courses.forEach((course) => {
-            addToCourseList(`${course.subject} ${course.number}`, course.completed);
+            addToCourseList(`${course.subject}-${course.number}`, course.completed);
         });
     } else {
         courses.filter((course) => course.subject === selectedCategory).forEach((course) => {
-            addToCourseList(`${course.subject} ${course.number}`, course.completed);
+            addToCourseList(`${course.subject}-${course.number}`, course.completed);
+        });
+    }
+
+    if (selectedCategory === "All") {//changing innerHTML resets eventlisteners -> forEach loops/filter/if statements have to be repeated
+        courses.forEach((course) => {
+            //addToCourseList(`${course.subject} ${course.number}`, course.completed);
+            document.querySelector(`.${course.subject}-${course.number}`).addEventListener("click", e => {
+                displayCourseDetails(`${course.subject}:${course.number}`);
+            });
+        });
+    } else {
+        courses.filter((course) => course.subject === selectedCategory).forEach((course) => {
+            document.querySelector(`.${course.subject}-${course.number}`).addEventListener("click", e => {
+                displayCourseDetails(`${course.subject}:${course.number}`);
+            });
+            //addToCourseList(`${course.subject} ${course.number}`, course.completed);
         });
     }
     const totalCredits = courses.reduce((total, course) => course.subject === selectedCategory || selectedCategory === "All" ? total + course.credits : total, 0);
@@ -116,3 +147,4 @@ categories.forEach((category) => {
     });
 });
 updateCourseList(selectedCategory);
+

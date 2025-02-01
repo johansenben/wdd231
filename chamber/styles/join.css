@@ -1,0 +1,162 @@
+:root {
+    --vody-bg-color: #0000;
+    --h2-color: var(--txt-color1);
+    --h3-color: var(--txt-color1);
+
+    --form-bg-color: var(--bg-color2);
+    --form-txt-color: var(--txt-color1);
+    --input-border-color: #000;
+    --input-bg-color: var(--bg-color1);
+    --input-txt-color: var(--txt-color1);
+
+
+    --membership-card-animation-time: 3s;
+}
+.dark-mode-on {
+    --body-bg-color: var(--bg-color5-dark);
+    --h2-color: var(--txt-color1-dark);
+    --h3-color: var(--txt-color1-dark);
+
+    --form-bg-color: var(--bg-color1-dark);
+    --form-txt-color: var(--txt-color1-dark);
+    --input-border-color: #eee;
+    --input-bg-color: var(--bg-color4);
+    --input-txt-color: var(--txt-color1);
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--body-bg-color);
+
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding-inline: 1rem;
+}
+h2 {
+    color: var(--h2-color);
+}
+h3 {
+    color: var(--h3-color);
+}
+form {
+    display: grid;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--form-bg-color);
+    color: var(--form-txt-color);
+}
+form label {
+    margin-bottom: 1rem;
+}
+form input, form select, form textarea {
+    width: 100%;
+    border-color: var(--input-border-color);
+    background-color: var(--input-bg-color);
+    color: var(--input-txt-color);
+}
+input::placeholder, select::placeholder, textarea::placeholder {
+    color: var(--input-txt-color);
+}
+form button {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.membership-levels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-block: 1rem;
+    flex-direction: column;
+    width: 80%;
+}
+.membership-levels h3 {
+    width: 100%;
+    text-align: center;
+}
+.membership-level {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-image: linear-gradient(90deg, #fff, #bdf, #fff);
+    background-position: 0% 0%;
+    background-size: 200% 100%;
+    animation: move-bg-gradient 5s ease infinite alternate;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    transition: transform 0.5s;
+}
+
+.membership-level:hover, .membership-level:has(button:focus) {
+    transform: scale(1.1);
+}
+.membership-level h4 {
+    font-size: 1.5rem;
+}
+.membership-level button {
+    border: none;
+    background-color: #0000;
+    animation: membership-level-animation var(--membership-card-animation-time) infinite alternate;
+
+}
+@keyframes membership-level-animation {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+dialog {
+    margin: auto;
+    animation: grow 1s ease-out;
+    max-width: 50%;
+}
+dialog .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2rem;
+}
+::backdrop {
+    background-color: #8884;
+}
+#modal-heading {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+@keyframes grow {
+    from {
+        transform: scale(0) rotate(-360deg);
+    }
+    to {
+        transform: scale(1) rotate(0);
+    }
+}
+@keyframes move-bg-gradient {
+    from {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+#perks-heading {
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: -0.75rem;
+}
+#perks li {
+    list-style: disc;
+}

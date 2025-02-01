@@ -1,0 +1,13 @@
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form-data {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, min(20rem, 50%));
+    justify-content: center;
+    margin-block: 1rem;
+}
