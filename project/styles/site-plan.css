@@ -1,0 +1,83 @@
+:root {
+    --primary-color: #083D77;
+    --secondary-color: #F4D35E;
+    --tertiary-color: #EBEBD3;
+    --accent-color1: #F95738;
+    --accent-color2: #EE964B;
+}
+* {
+    font-family: "Merriweather", serif;
+    font-style: normal;
+}
+body {
+    width: 100%;
+    background-color: var(--tertiary-color);
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--accent-color1);
+}
+h2 {
+    border-bottom: 2px solid var(--accent-color2);
+    width: fit-content;
+}
+h2, p, li {
+    margin-block: 0.5rem;
+    color: var(--primary-color);
+}
+main {
+    padding-inline: 3rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+p {
+    margin-left: 2rem;
+}
+
+.color-schema {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.color-schema > * {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.color-schema > *::after {
+    content: '';
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid var(--primary-color);
+}
+.color-schema > :nth-child(1)::after {
+    background-color: var(--primary-color);
+}
+.color-schema > :nth-child(2)::after {
+    background-color: var(--secondary-color);
+}
+.color-schema > :nth-child(3)::after {
+    background-color: var(--tertiary-color);
+}
+.color-schema > :nth-child(4)::after {
+    background-color: var(--accent-color1);
+}
+.color-schema > :nth-child(5)::after {
+    background-color: var(--accent-color2);
+}
+
+.title-font-example {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.paragraph-font-example {
+    font-weight: 400;
+    font-size: 1rem;
+}
+img {
+    max-width: 100%;
+}
