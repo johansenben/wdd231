@@ -94,3 +94,8 @@ nav a.current-page {
 main {
     padding-top: 6rem;
 }
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}

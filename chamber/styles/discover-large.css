@@ -1,0 +1,41 @@
+@media only screen and (min-width: 1025px) {
+    .discover-items {
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+    }
+    .card {
+        display: grid;
+        grid-template-areas: 
+                    "image heading"
+                    "image address"
+                    "description description"
+                    "button button";
+        grid-template-rows: 2fr 2fr 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        justify-content: center;
+        height: unset;
+        height: 100%;
+    }
+    .card h2 {
+        grid-area: heading;
+        margin: 0;
+    }
+    .card figure {
+        grid-area: image;
+        margin: none;
+    }
+    .card p:nth-of-type(1) {
+        grid-area: address;
+        margin: 0
+    }
+    .card p:nth-of-type(2) {
+        grid-area: description;
+        margin: 0;
+    }
+    .card button {
+        grid-area: button;
+        max-width: 10rem;
+        height: fit-content;
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "items": [
+        {
+            "title": "The Old Man River",
+            "img": "images/lethbridge-bridge.webp",
+            "address": "Coulees/River Bottom within Lethbridge",
+            "description": "Lethbridge has a large coulee going through the middle of it. The coulee is used to divide Lethbridge into the North/South sides and the West side. The Old Man river follows the coulee and makes a perfect rever bottom to hike and explore.",
+            "classname": "river"
+        },
+        {
+            "title": "The Corn Maze",
+            "img": "images/cornmaze.webp",
+            "address": "104051 Range Rd 224, Lethbridge County, AB",
+            "description": "A new Corn Maze design is created each summer. It provides an easy and fun experience.",
+            "classname": "cornmaze"
+        },
+        {
+            "title": "Waterton National Park",
+            "img": "images/waterton.webp",
+            "address": "Waterton, AB",
+            "description": "Waterton is a town and a national park close to the mountains and about a 1.5 hour drive from Lethbridge. Some activities to do at Woterton include hiking and camping.",
+            "classname": "waterton"
+        },
+        {
+            "title": "The Birds Of Prey Center",
+            "img": "images/birdsofprey.webp",
+            "address": "2124 16 Ave, Coaldale",
+            "description": "The Birds of Prey Center is in Coaldale, which is only a 15 minute drive from Lethbridge. They rescue birds, help them recover, then usually release them.",
+            "classname": "birds-of-prey"
+        },
+        {
+            "title": "Frank Slide",
+            "img": "images/frank-slide.webp",
+            "address": "Frank, AB",
+            "description": "It is near the town of Frank. In 1903, the original town of Frank was burried by one of the deadliest rock slides in history.",
+            "classname": "frank-slide"
+        },
+        {
+            "title": "Lethbridge Temple",
+            "img": "images/lethbridge-temple.webp",
+            "address": "38 Mauretania Rd W, Lethbridge, AB",
+            "description": "It was announced in the April 2023 General Conference and is currently under construction.",
+            "classname": "temple"
+        },
+        {
+            "title": "Cornfest",
+            "img": "images/cornfest.webp",
+            "address": "Downtown Taber, AB",
+            "description": "The town of Taber, which is about a 30 minute drive from Lethbridge is famous for it's corn and has a yearly celebration called 'Cornfest'",
+            "classname": "cornfest"
+        },
+        {
+            "title": "Royal Tyrell Museum",
+            "img": "images/dinosaur.webp",
+            "address": "1500 N Dinosaur Trail, Drumheller, AB",
+            "description": "The Royal Tyrell Museum in Drumheller has a large collection of dinosaur fossils, and information about scientific discovers related to dinosaurs. It is about a 2.5 hour drive from Lethbridge.",
+            "classname": "royal-tyrell-museum"
+        }
+    ]
+}
