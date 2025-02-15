@@ -1,0 +1,127 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--tertiary-color);
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+}
+.filters {
+    display: flex;
+    gap: 1rem;
+}
+
+#books {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-sizing: border-box;
+    padding: 1rem;
+    gap: 1rem;
+    width: 100%;
+}
+.card {
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+    border: 1px solid;
+}
+.card > * {
+    padding-inline: 1rem;
+}
+.card h3 {
+    color: var(--primary-color);
+    background-color: var(--accent-color2);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    padding-block: 0.5rem;
+}
+.card p {
+    margin: 0.5rem;
+}
+.full-stars::after {
+    display: block;
+    content: '★★★★★';
+    color: #d4be1a;
+}
+.stars .full-stars {
+    position: absolute;
+    z-index: 10;
+    overflow: hidden;
+    width: calc(100% * var(--stars) / 5);
+    height: 2rem;
+
+}
+.empty-stars::after {
+    display: block;
+    content: '☆☆☆☆☆';
+    color: #888;
+}
+.stars .empty-stars {
+    position: absolute;
+    z-index: 9;
+}
+.stars {
+    position: relative;
+    margin-bottom: 2rem;
+    width: 10ch;
+}
+
+::backdrop {
+    background-color: #444a;
+}
+.reviews-modal {
+    width: min(100%, 600px);
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 1rem;
+}
+.reviews-modal .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews-modal h3 {
+    width: 100%;
+    color: var(--primary-color);
+    background-color: var(--accent-color2);
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.reviews-modal ul {
+    padding: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 1rem;
+}
+.reviews-modal li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.reviews-modal .reviewer {
+    font-weight: bold;
+}
+.reviews-modal p {
+    margin: 0;
+    padding: 0;
+}

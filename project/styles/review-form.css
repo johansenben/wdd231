@@ -1,0 +1,28 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--tertiary-color);
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 2rem;
+}
+form > input, form > textarea, form .name, form select {
+    margin-bottom: 2rem;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+form button {
+    width: min(50%, 8rem);
+    margin: 0 auto;
+}

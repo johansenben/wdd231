@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readers' Book Reviews - Review Form</title>
+    <meta name="author" content="Ben Johansen">
+    <meta name="description" content="Review Form page for Ben Johansen's project">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/header-large.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/review-form.css">
+    <link rel="stylesheet" href="styles/review-form-large.css">
+    <script src="scripts/review-form.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <span>Readers' Book Reviews</span>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews.html">See Reviews</a></li>
+            <li class="current-page"><a href="review-form.html">Make a Review</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1>Make A Review</h1>
+        <form action="review-submitted.html">
+            <div class="name">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" required>
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" required>
+            </div>
+            <select name="book" id="book-select" required>
+                <option value="" selected disabled>Select a book</option>
+            </select>
+            <label>Stars: <input type="number" name="stars" id="stars" min="1" max="5" required></label>
+            <br>
+            <label for="review">Review</label>
+            <textarea name="review" id="review" required></textarea>
+
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </main>
+    <footer>
+        <span>&copy;2025</span>
+        <span>Ben Johansen</span>
+        <span>WDD231 - Project: Readers' Book Reviews</span>
+    </footer>
+</body>
+</html>

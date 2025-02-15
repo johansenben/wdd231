@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--secondary-color);
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+footer span {
+    margin: 0 auto;
+}

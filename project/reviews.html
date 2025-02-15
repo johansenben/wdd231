@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readers' Book Reviews - Reviews</title>
+    <meta name="author" content="Ben Johansen">
+    <meta name="description" content="Reviews page for Ben Johansen's project">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/header-large.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <script src="scripts/reviews.js" defer></script>
+    <link rel="stylesheet" href="styles/reviews.css">
+    <link rel="stylesheet" href="styles/reviews-large.css">
+
+</head>
+<body>
+    <header>
+        <span>Readers' Book Reviews</span>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current-page"><a href="reviews.html">See Reviews</a></li>
+            <li><a href="review-form.html">Make a Review</a></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h1>Reviews</h1>
+            <h2>Filter By:</h2>
+            <div class="filters">
+                <label>All<input type="radio" name="filter" id="filter-all"></label>
+                <label>Author<input type="radio" name="filter" id="filter-author"></label>
+                <label>Series<input type="radio" name="filter" id="filter-series"></label>
+            </div>
+            <div id="filter-select"></div>
+            <h2>Books</h2>
+            <div id="books"></div>
+            <dialog class="reviews-modal"></dialog>
+        </section>
+    </main>
+    <footer>
+        <span>&copy;2025</span>
+        <span>Ben Johansen</span>
+        <span>WDD231 - Project: Readers' Book Reviews</span>
+    </footer>
+</body>
+</html>
