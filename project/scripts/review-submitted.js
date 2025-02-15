@@ -1,3 +1,3 @@
-const reviewCount = parseInt(localStorage.getItem("reviewCount")) + 1 ?? 1;
-localStorage.setItem("reviewCount", reviewCount);
-document.querySelector("#review-count").textContent = `You have submitted ${reviewCount} review${reviewCount > 1 ? 's' : ''}!`;
+const reviewCount = parseInt(localStorage.getItem("reviewCount")) ?? 0;
+localStorage.setItem("reviewCount", reviewCount + 1);
+document.querySelector("#review-count").textContent = `You have submitted ${reviewCount + 1} review${reviewCount > 0 ? 's' : ''}!`;
