@@ -1,4 +1,4 @@
-const reviewCount = parseInt(localStorage.getItem("reviewCount")) ?? 0;
+const reviewCount = parseInt(localStorage.getItem("reviewCount") ?? '0') ?? 0;
 if (reviewCount == NaN)
     reviewCount = 0;
 localStorage.setItem("reviewCount", reviewCount + 1);
